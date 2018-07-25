@@ -1,22 +1,13 @@
-Chrome拡張の雛形
-========================
+niconico-nonpolitical
+===
 
-概要
------
+ニコニコするためにニコニコしてるのでニコニコできないアレはアレしようというアレ
+1. git cloneもしくはzipでダウンロード
+2. chrome→設定→拡張機能→パッケージ化されていない拡張機能を読み込む
+3. 先ほどダウンロードしたソースコードのsrcディレクトリを指定
+4. [ニコニコする](http://www.nicovideo.jp/ranking)
 
-これをダウンロードかcloneして、書き換えてください。
-
-
-各種ドキュメント/サンプルページ
------------------------------------
-
-- [使い方](http://qiita.com/waterada/private/f8a53677a46c131a3734)
-- [サンプルページ](https://waterada.github.io/chrome-ex-template/test/example.html)
-- [ChEx.js のドキュメント](ChEx-doc.md)
-- [単体テスト](https://waterada.github.io/chrome-ex-template/test/test.html)
-
-
-License
------------------------------------
-
-MIT
+## 技術的なアレ
+- [Chrome拡張を簡単に作れるテンプレとライブラリ造ったので紹介](https://qiita.com/waterada/items/7f5729e066714284ff72)([waterada](https://github.com/waterada)さま)
+  - テンプレートとして使用させていただいた
+- [Vanilla JS](http://www.vanilla-js.com/)
