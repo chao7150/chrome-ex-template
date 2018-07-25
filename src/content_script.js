@@ -1,11 +1,10 @@
-﻿//----------------------
-$(function () {
-    //↓疎通確認コード：タイトルの■が回転するはず
-    console.log('Chrome拡張の疎通確認コードが動いています。動作確認ができたら削除してください。');
-    let flag = false;
-    setInterval(function () {
-        document.title = (flag ? "■" : "◆") + document.title.replace(/^[■◆]/, '');
-        flag = !flag;
-    }, 1000);
-    //↑疎通確認コード
-});
+﻿const erase = () => {
+    const movies = Array.from(document.getElementsByClassName("g_politics"))
+    movies.forEach((movie) => movie.style.display="none")
+    const rows = Array.from(document.getElementsByClassName("category_row"))
+    rows.forEach((row) => {
+        row.children[2].style.display="none"
+    })
+}
+erase()
+setInterval(erase, 1000)
